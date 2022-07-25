@@ -1,11 +1,6 @@
 
-# create script using usethis
-usethis::use_r("matches.R")
 
-# want to use the function like tihs
-# uss_make_matches(engsoccerdata::italy)
 
-### here is the actual function
 uss_make_matches <- function(data_engsoc, country) {
   result <-
     data_engsoc |>
