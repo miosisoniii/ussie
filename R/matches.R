@@ -8,6 +8,7 @@
 #'
 #' @return dataframe, a tibble with columns `country`, `date`, `season`, `tier`, `home`,
 #'    `visitor`, `goals_home`, `goals_visitor`.
+#'
 #' @export
 #'
 #' @examples
