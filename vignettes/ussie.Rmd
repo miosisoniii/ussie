@@ -1,0 +1,29 @@
+---
+title: "ussie"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ussie}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ussie)
+library(dplyr)
+```
+
+Ussie let's you work with English football league data making a more standardized tibble for each country.
+
+Typically you show how to use the function here:
+```{r}
+spain <- uss_make_matches(engsoccerdata::spain, "Spain")
+glimpse(spain)
+```
+
