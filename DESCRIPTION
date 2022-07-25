@@ -1,9 +1,9 @@
 Package: ussie
-Title: What the Package Does (One Line, Title Case)
+Title: European Football Data Manipulation
 Version: 0.0.0.9000
 Authors@R: 
     person("Artemio", "Sison", , "artemio.sison@inovio.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Manipulation of Football/Soccer data from multple countries.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
