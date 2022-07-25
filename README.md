@@ -4,6 +4,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/miosisoniii/ussie/workflows/R-CMD-check/badge.svg)](https://github.com/miosisoniii/ussie/actions)
+[![test-coverage](https://github.com/miosisoniii/ussie/workflows/test-coverage/badge.svg)](https://github.com/miosisoniii/ussie/actions)
 <!-- badges: end -->
 
 The goal of ussie is to demonstrate the usage of devtools/testthat for
