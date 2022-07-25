@@ -31,4 +31,4 @@ uss_make_matches <- function(data_engsoc, country) {
 
 
 #percentage(nlines of code)
-devtools::test_coverage_active_file()
+# devtools::test_coverage_active_file()

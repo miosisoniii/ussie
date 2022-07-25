@@ -1,0 +1,47 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ussie
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/miosisoniii/ussie/workflows/R-CMD-check/badge.svg)](https://github.com/miosisoniii/ussie/actions)
+<!-- badges: end -->
+
+The goal of ussie is to demonstrate the usage of devtools/testthat for package development using the engsoccerdata() dataset. The function created will create a column that will help join two datasets that may be different based on the country they are from.
+
+## Installation
+
+You can install the development version of ussie from [GitHub](https://github.com/) with:
+
+
+``` r
+# install.packages("devtools")
+devtools::install_github("miosisoniii/ussie")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem: Each dataset from each country has a different structure, so comparison by join is possible by adding a column *country*.
+
+```{r example}
+library(ussie)
+## basic example code
+uss_make_matches(engsoccerdata::italy, "Italy")
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+```{r}
+
+```
+
+
