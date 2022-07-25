@@ -3,7 +3,7 @@ pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
   ussie: ussie.html
-last_built: 2022-07-25T20:25Z
+last_built: 2022-07-25T20:47Z
 urls:
   reference: https://miosisoniii.github.io/ussie/reference
   article: https://miosisoniii.github.io/ussie/articles
