@@ -8,7 +8,6 @@
 #'
 #' @return dataframe, a tibble with columns `country`, `date`, `season`, `tier`, `home`,
 #'    `visitor`, `goals_home`, `goals_visitor`.
-#'
 #' @export
 #'
 #' @examples
@@ -31,3 +30,5 @@ uss_make_matches <- function(data_engsoc, country) {
 }
 
 
+#percentage(nlines of code)
+devtools::test_coverage_active_file()
