@@ -19,3 +19,6 @@ dataframe, a tibble with columns \code{country}, \code{date}, \code{season}, \co
 Given a league-play data frame from {engsoccer}, returns a tibble with
 standardised column-names and types, e.g. \code{date} is a \code{Date}.
 }
+\examples{
+uss_make_matches(engsoccerdata::italy, "Italy")
+}
