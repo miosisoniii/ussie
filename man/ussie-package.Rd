@@ -12,6 +12,7 @@ Manipulation of Football/Soccer data from multple countries.
 Useful links:
 \itemize{
   \item \url{https://github.com/miosisoniii/ussie}
+  \item \url{https://miosisoniii.github.io/ussie/}
   \item Report bugs at \url{https://github.com/miosisoniii/ussie/issues}
 }
 

@@ -27,3 +27,14 @@ spain <- uss_make_matches(engsoccerdata::spain, "Spain")
 glimpse(spain)
 ```
 
+Let's try and use the "get_matches.R" function. This is a nice function becuase it cleans up the naming conventions that we struggled by writing them out through yesterday. 
+
+It also helps because you can enter any case string and it will return a capitalized first letter in the country column
+```{r}
+italy_matches <- 
+  uss_get_matches("italy")
+
+glimpse(ital_matches)
+
+```
+
