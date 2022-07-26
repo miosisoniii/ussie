@@ -38,3 +38,8 @@ glimpse(ital_matches)
 
 ```
 
+We can add filtering conditions!
+```{r uss_get_matches_filter}
+uss_get_matches("england", season == 1966)
+```
+

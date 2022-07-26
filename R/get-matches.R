@@ -55,11 +55,11 @@ get_soccer_data <- function(data_name) {
   # utils::data() writes the data straight into an environment, using
   # the name of the dataset, so we create a sandbox (isolated) environment
   e <- new.env()
-  
+
   # utils::data() puts the data named by `data_name` into the environment `e`,
   # and returns the `name`, which should be the same as `data_name`
   name <- utils::data(list = data_name, package = "engsoccerdata", envir = e)[1]
-  
+
   # return the data from the environment
   e[[name]]
 }
@@ -76,24 +76,25 @@ get_soccer_data <- function(data_name) {
 #' the source data.
 #'
 #' @inherit uss_make_matches params return
-#'
+#' @inheritParams dplyr::filter
 #' @examples
 #' uss_get_matches("england")
+#' uss_get_matches("england", season == 1966)
 #' @export
 #'
-uss_get_matches <- function(country = uss_countries()) {
-  
-  # 2.2.1 side effects (errors) 
+uss_get_matches <- function(country = uss_countries(), ...) {
+
+  # 2.2.1 side effects (errors)
   #
   # 1. instead, use rlang::arg_match() to validate country
   country <- rlang::arg_match(country)
 
-  
+
   data <- get_soccer_data(country)
-  
+
   # capitalize
   substr(country, 1, 1) <- toupper(substr(country, 1, 1))
-  
+
   # 2.3.1 tidy eval (pass the dots)
   #
   # 1. put `...` into the formals
@@ -105,8 +106,9 @@ uss_get_matches <- function(country = uss_countries()) {
   # in other cases, consider using dot-prefix for the other args
   # (but we aren't doing that here)
   # https://design.tidyverse.org/dots-prefix.html
-  
-  uss_make_matches(data, country) 
+
+  uss_make_matches(data, country) |>
+    dplyr::filter(...)
 }
 
 
